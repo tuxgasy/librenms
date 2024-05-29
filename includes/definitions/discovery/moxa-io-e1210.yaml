@@ -1,0 +1,13 @@
+mib: MOXA-IO-E1210-MIB
+modules:
+  os:
+    version: MOXA-IO-E1210-MIB::firmwareVersion.0
+  sensors:
+    state:
+      data:
+        -
+          oid: diTable
+          value: diStatus
+          num_oid: '.1.3.6.1.4.1.8691.10.1210.10.1.1.4.{{ $index }}'
+          descr: 'DI Status {{ $index }}'
+          state_name: diStatus

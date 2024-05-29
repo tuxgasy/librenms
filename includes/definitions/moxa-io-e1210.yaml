@@ -1,0 +1,8 @@
+os: moxa-io-e1210
+icon: moxa
+text: 'Moxa IO E1210'
+type: environment
+mib_dir: moxa
+discovery:
+  - sysObjectID:
+    - .1.3.6.1.4.1.8691.10.1210
